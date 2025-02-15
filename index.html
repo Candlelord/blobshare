@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blob Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Blob Sharing Testnet</h1>
+      <button id="connectWalletButton">Connect Wallet</button>
+    </header>
+
+    <main>
+      <section id="createBlobSection">
+        <h2>Create or Import Blob</h2>
+        <button id="createBlobButton">Create Blob</button>
+        <button id="importBlobButton">Import Blob</button>
+        
+        <div id="blobForm" class="hidden">
+          <input type="text" id="blobName" placeholder="Blob Name">
+          <input type="file" id="blobImage" accept="image/*">
+          <button id="saveBlobButton">Save Blob</button>
+        </div>
+      </section>
+
+      <section id="blobsSection">
+        <h2>Your Blobs</h2>
+        <div id="blobsContainer" class="blobs-container"></div>
+      </section>
+
+      <section id="sendBlobSection" class="hidden">
+        <h2>Send Blob to a Friend</h2>
+        <input type="text" id="friendName" placeholder="Friend's Name">
+        <button id="searchFriendButton">Search</button>
+        <div id="searchResults" class="hidden"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Blob Sharing Testnet</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
